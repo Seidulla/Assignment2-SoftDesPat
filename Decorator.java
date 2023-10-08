@@ -4,7 +4,7 @@ public class Decorator {
 
         Operation base = new GrayscaleOperation();
         Operation redEye = new RedEye(base);
-        Operation contrast = new Contrast(base);
+       
 
         processor.setFilterStrategy(base);
         processor.processImage("grayscaleIMG.jpg");
